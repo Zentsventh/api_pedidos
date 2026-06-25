@@ -8,7 +8,7 @@ $conexion = new mysqli($host, $usuario, $password, $base_datos);
 if ($conexion->connect_error) {
     echo json_encode([
         "success" => false,
-        "mensaje" => "Error de conexión a la base de datos modo prueba"
+        "mensaje" => "Error de conexión a la base de datos"
     ]);
     exit;
 }
